@@ -1,10 +1,11 @@
 #!/usr/bin/env groovy
+
 @Library('shared_library') _
 
 pipeline {
     agent any
     tools {
-        maven 'maven'
+        go 'go'
     }
     stages {
          stage('checkout scm') {
